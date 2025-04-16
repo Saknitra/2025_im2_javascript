@@ -1,11 +1,12 @@
 console.log('hi script.js')
 
-let password = prompt ("Passwort eingeben");
-let username = prompt ("Username eingeben");
+let password = prompt ("Passwort eingeben"); /*String (Passwort eingeben) wird als Variabel Password gespeichert.*/
+let username = prompt ("Username eingeben"); /*Das Gleiche wie oben einfach mit anderer Variabel (Username eingeben)*/
 
-CheckPassword(password)
+CheckLength(password, 12)
 CheckLength(username, 7)
 
+/*Diese kommende Funktion ist nun überflüssig, aber haben wir als Erstes gemacht*/
 function CheckPassword(password){
     if (password.length > 11) {
     console.log ("Das Passwort ist lang genug");
@@ -18,12 +19,13 @@ function CheckPassword(password){
     }
 }
 
-function CheckLength(TestString, TestLength){
-    if (TestString.length >= TestLength) {
-    console.log ("Der Username ist lang genug");
+function CheckLength(TestString, TestLength){ /*TestString bezieht sich auf die Zeichenkette (username in diesem Fall) und
+    die TestLength bezieht sich auf die Zahl nach Username*/
+    if (TestString.length >= TestLength) { /*Die Länge der TestString soll gleich oder grösser als 7 sein, haben wir hier festgelegt*/
+    console.log ("Der Text ist lang genug");
     } 
 
     else {
-    console.log("Bitte verwende einen längeren Username.");
+    console.log("Bitte verwende einen längeren Text.");
     }
 }

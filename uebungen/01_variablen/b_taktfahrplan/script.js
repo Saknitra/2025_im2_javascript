@@ -10,3 +10,9 @@
 * */
 
 const taktfahrplan_done_year = 2070;
+const Birthyear = prompt ("In welchem Jahr bist du geboren?")
+
+let AgeMax = taktfahrplan_done_year - Birthyear;
+let AgeMin = AgeMax - 1;
+
+console.log(`Du bist ${AgeMax} oder ${AgeMin} Jahre alt.`)
