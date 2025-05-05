@@ -14,3 +14,9 @@
 * Zwischen 31 und 40 sollen 4 Lampen angezeigt werden: 💡💡💡💡
 * Zwischen 41 und 50 sollen 5 Lampen angezeigt werden: 💡💡💡💡💡
 * */
+
+const dimmer = document.querySelector("#dimmer");
+const light = document.querySelector("#light");
+const bulb = "💡"
+
+dimmer.addEventListener('input', )
