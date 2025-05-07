@@ -44,6 +44,6 @@ input_add.addEventListener('keydown', function (event) {
         }
         localStorage.setItem('skills', JSON.stringify(skills));
         input_add.value = '';
-        visualizeSkills();
+        visualizeSkills(); /*nochmal aufgerufen die Skills, wie in Zeile 35*/
     }
 })
